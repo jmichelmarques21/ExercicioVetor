@@ -17,13 +17,12 @@ namespace ExercicioVetor {
 
             Estudante[] vect = new Estudante[10];
 
-
             Console.Write("Quantos quartos serão alugados? ");
             int n = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= n; i++) {
                 Console.WriteLine();
-                Console.WriteLine("Aluguel #" + i);
+                Console.WriteLine("Quarto #" + i);
                 Console.Write("Nome: ");
                 string nome = Console.ReadLine();
                 Console.Write("E-mail: ");
@@ -34,11 +33,10 @@ namespace ExercicioVetor {
             }
 
             Console.WriteLine();
-
             Console.WriteLine("Quartos ocupados: ");
             for (int i = 0; i < 10; i++) {
                 if (vect[i] != null) {
-                    Console.WriteLine(i + ": " + vect[i]);
+                    Console.WriteLine(i + ": " + vect[i]);        
                 }
             }
 
